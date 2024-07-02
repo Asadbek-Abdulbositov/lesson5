@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background: wheat;
+  padding: 30px;
+  gap: 150px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: 0.5s cubic-bezier(0.075, 1, 0.165, 1);
+}
+.box1 {
+  background: dodgerblue;
+}
+.box:hover {
+  transform: translate(50px, 50px);
+}
+.box1:hover {
+  /* transform: translate(-50px,-50px); */
+  transform: scale(1.5, 2);
+}
+.box2 {
+  background: rgb(142, 229, 12);
+}
+.box2:hover {
+  transform: rotate(180deg);
+}
+.box3 {
+  background: springgreen;
+}
+.box3:hover {
+  transform: skew(20deg);
+}
+.box4 {
+  background: darkorange;
+}
+.box4:hover {
+  /* transform: perspective(400px) rotateY(40deg) rotateX(40deg); */
+  overflow-y: auto;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+.container1 {
+  width: 400px;
+  height: 400px;
+  background: springgreen;
+  overflow: hidden;
+}
+.a {
+  width: 100%;
+  height: 100%;
+  background: crimson;
+  transform: translate(-100%);
+  transition: 1s;
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+}
+.container1:hover .a {
+  transform: translate(0);
+}
+.container1:hover .b {
+  transform: translateY(0);
+}
+.b {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/honda-prelude-concept-front-three-quarters-653927960f1f4.jpg?crop=1.00xw:0.920xh;0,0.0801xh&resize=980:*);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+  transition: 1s;
+}
